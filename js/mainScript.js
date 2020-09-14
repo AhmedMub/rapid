@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
   let spinner = document.querySelector('.spinner');
   setTimeout(() => {
     spinner.remove();
-  }, 6000);
+  }, 500);
 });
 
 //header window hight
@@ -32,7 +32,6 @@ icons.onclick = () => {
   ulNav.classList.toggle("enableUl");
   icons.firstElementChild.classList.toggle("disabled");
   icons.lastElementChild.classList.toggle("disabled");
-  document.body.classList.toggle("body-hidden");
 };
 navItem.forEach(el => {
   el.addEventListener('click', () => {
@@ -197,19 +196,6 @@ bulbs.forEach((e) => {
     }
   });
 });
-
-
-//trigger niceScroll
-$(function (){
-  $('body').niceScroll({
-    cursorcolor: '#1bb1dc',
-    cursoropacitymin: '0.3',
-    cursorwidth: '7px',
-    cursorminheight: '100'
-  });
-});
-
-
 //scroll top btn disabled
 const scrollTop = document.querySelector('.scroll-top'); 
 window.onscroll = () => {
