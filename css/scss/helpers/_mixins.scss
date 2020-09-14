@@ -1,0 +1,69 @@
+@mixin specialFont {
+  font-family: "Lexend Mega", sans-serif;
+}
+@mixin mainFont {
+  font-family: "Montserrat", sans-serif;
+}
+//Media Query
+@mixin media-1199 {
+  @media (max-width: 1199.98px) {
+    @content;
+  }
+}
+@mixin media-991 {
+  @media (max-width: 991.98px) {
+    @content;
+  }
+}
+@mixin media-767 {
+  @media (max-width: 767.98px) {
+    @content;
+  }
+}
+@mixin media-575 {
+  @media (max-width: 575.98px) {
+    @content;
+  }
+}
+@mixin media-400 {
+  @media (max-width: 400px) {
+    @content;
+  }
+}
+//************************************
+@mixin Prefixer($prop, $value, $prefixes: ()) {
+  @each $prefix in $prefixes {
+    #{'-' + $prefix + '-' + $prop}: $value;
+  }
+  #{$prop}: $value;
+}
+@mixin heading {
+  font-size: 2.3rem;
+  color: $mainClr;
+  margin-bottom: 1rem;
+}
+@mixin scrollingAnimation {
+  @keyframes scrolling {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-200%);
+    }
+  }
+}
+@mixin beforeAndAfter {
+  content: " ";
+      position: absolute;
+      top: 0;
+      width: 10rem;
+      height: 100%;
+      z-index: 1;
+}
+@mixin Logo {
+  @include specialFont;
+  color: $mainClr;
+  display: inline;
+  font-weight: lighter;
+  text-transform: uppercase;
+}

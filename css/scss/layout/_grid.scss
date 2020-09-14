@@ -1,0 +1,11 @@
+body {
+  @include mainFont;
+  line-height: 1.6;
+}
+.container {
+  width: 74vw;
+  margin: auto;
+  @include media-991 {
+    width: 90%;
+  }
+}

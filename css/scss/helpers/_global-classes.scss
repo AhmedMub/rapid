@@ -1,0 +1,17 @@
+/*Start global classes*/
+.list-unstyled {
+  list-style: none;
+  padding-left: 0;
+}
+.text-center {
+  text-align: center;
+}
+h2 {
+  text-transform: capitalize;
+}
+.disabled {
+  opacity: 0;
+}
+.enabled {
+  display: inline-block;
+}

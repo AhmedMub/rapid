@@ -1,0 +1,173 @@
+footer {
+    padding-top: 3rem;
+    background: $bgClr;
+    .footer-content {
+        display: flex;
+        justify-content: flex-start;
+        width: 100%;
+        @include media-991 {
+            flex-wrap: wrap;
+        }
+        .inner-content {
+            flex-shrink: 1;
+            flex-grow: 1;
+            flex-basis: 300px;
+            position: relative;
+            margin-bottom: 3rem;
+            h4 {
+                text-transform: capitalize;
+                font-size: 17px;
+                font-weight: 600;
+                color: $mainClr;
+                margin-top: 13px;
+            }
+            .first {
+                .logo {
+                    @include Logo;
+                    font-size: 30px;
+                }
+                .logo-info {
+                    font-size: 14px;
+                    width: 18rem;
+                    color: #535074;
+                }
+                h4 {
+                    margin-top: 20px;
+                    margin-bottom: -5px;
+                }
+               
+                p:last-of-type {
+                    font-size: 14px;
+                    width: 18rem;
+                    margin-bottom: 1.8rem;
+                    margin-top: 31px;
+                }
+                input:last-of-type {
+                    border: 1px solid #ddd;
+                    width: 10.5rem;
+                    height: 31px;
+                    padding: 0 10px;
+                }
+            }
+            .second {
+                margin-left: 40px;
+                @include media-1199 {
+                    margin-right: 16px;
+                }
+                @include media-991 {
+                    margin: 0;
+                }
+                ul:first-of-type {
+                    li {
+                        a {
+                            text-decoration: none;
+                            color: #696592;
+                            text-transform: capitalize;
+                            font-size: 14px;
+                            display: block;
+                            margin-bottom: 12px;
+                            &:hover {
+                                color: $secondClr;
+                            }
+                        }
+                    }
+                }
+                .address {
+                    li {
+                        font-size: 14px;
+                        span {
+                            font-weight: 600;
+                        }
+                    }
+                }
+                > ul:last-of-type {
+                    margin-top: 31px;
+                    cursor: pointer;
+                    li {
+                        display: inline-block;
+                        margin-top: -4px;
+                        margin-right: 8px;
+                        width: 30px;
+                        height: 30px;
+                        border-radius: 50%;
+                        background-color: #1bb1dc;
+                        color: #fff;
+                        padding: 5px;
+                        text-align: center;
+                        line-height: 2;
+                        @include media-1199 {
+                            font-size: 11px;
+                            width: 20px;
+                            height: 20px;
+                            margin-right: 0;
+                        }
+                    }
+                }
+            }
+            .third {
+                p {
+                    font-size: 14px;
+                }
+                form {
+                    input {
+                        display: block;
+                        width: 23rem;
+                        height: 35px;
+                        border: 1px solid #dce1ec;
+                        margin-bottom: 1rem;
+                        padding: 0 10px;
+                        &::placeholder {
+                            text-transform: capitalize;
+                            font-size: 14px;
+                            color: #a2a0bd;
+                        }
+                        @include media-1199 {
+                            width: 21rem;
+                        }
+                    }
+                    textarea {
+                        width: 23rem;
+                        height: 7rem;
+                        border: 1px solid #dce1ec;
+                        padding: 10px;
+                            &::placeholder {
+                                text-transform: capitalize;
+                                font-size: 14px;
+                                color: #a2a0bd;
+                            }
+                        @include media-1199 {
+                            width: 21rem;
+                        }
+                        }
+                }
+            }
+        }
+    }
+    .copyright {
+        padding: 1rem 0;
+        background-color: #fff;
+        @include media-991 {
+            margin-top: 1rem;
+        }
+        p {
+            margin: .8rem 0;
+            text-transform: capitalize;
+            font-size: 15px;
+            font-weight: 400;
+        }
+        p:first-child {
+            span {
+                font-weight: 700;
+                font-size: 17px;
+            }
+        }
+        p:last-child {
+            color: #a2a0bd;
+            cursor: pointer;
+            span {
+                color: $secondClr;
+                font-size: 17px;
+            }
+        }
+    }
+}
