@@ -41,7 +41,7 @@ navItem.forEach(el => {
   ulNav.classList.toggle("enableUl");
   icons.firstElementChild.classList.toggle("disabled");
   icons.lastElementChild.classList.toggle("disabled");
-  document.body.classList.toggle("body-hidden");
+  document.body.classList.remove("body-hidden");
   });
 });
 
