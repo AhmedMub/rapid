@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
   let spinner = document.querySelector('.spinner');
   setTimeout(() => {
     spinner.remove();
+    document.body.classList.remove('body-hidden');
   }, 3000);
 });
 
