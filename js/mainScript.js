@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
   let spinner = document.querySelector('.spinner');
   setTimeout(() => {
     spinner.remove();
-  }, 500);
+  }, 3000);
 });
 
 //header window hight
@@ -32,6 +32,7 @@ icons.onclick = () => {
   ulNav.classList.toggle("enableUl");
   icons.firstElementChild.classList.toggle("disabled");
   icons.lastElementChild.classList.toggle("disabled");
+  document.body.classList.toggle("body-hidden");
 };
 navItem.forEach(el => {
   el.addEventListener('click', () => {
@@ -39,6 +40,7 @@ navItem.forEach(el => {
   ulNav.classList.toggle("enableUl");
   icons.firstElementChild.classList.toggle("disabled");
   icons.lastElementChild.classList.toggle("disabled");
+  document.body.classList.toggle("body-hidden");
   });
 });
 
@@ -196,6 +198,7 @@ bulbs.forEach((e) => {
     }
   });
 });
+
 //scroll top btn disabled
 const scrollTop = document.querySelector('.scroll-top'); 
 window.onscroll = () => {

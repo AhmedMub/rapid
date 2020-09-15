@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
       translateX: [-400, 0],
       easing: 'easeOutExpo',
       duration: 1500,
-      delay: 1500,
+      delay: 3000,
       opacity: [0, 1]
     });
     anime({
@@ -13,16 +13,16 @@ document.addEventListener('DOMContentLoaded', () => {
       translateY: [-5, 0],
       easing: 'easeInOutQuad',
       duration: 1000,
-      delay: 1500,
+      delay: 3000,
       opacity: [0, 1]
     });
     anime({
       targets: '.social-icnos ul li',
       translateY: [-100, 0],
       easing: 'easeOutExpo',
-      duration: 2000,
+      duration: 1000,
       delay: function(el, i, l) {
-        return 1500 + i * 100;
+        return 3000 + i * 100;
       },
       endDelay: function(el, i, l) {
         return (l - i) * 100;
@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
       easing: 'easeOutExpo',
       duration: 2000,
       delay: function(el, i, l) {
-        return 1500 + i * 100;
+        return 3000 + i * 100;
       },
       endDelay: function(el, i, l) {
         return (l - i) * 100;
@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', () => {
       easing: 'easeOutExpo',
       duration: 2000,
       delay: function(el, i, l) {
-        return 1500 + i * 100;
+        return 3000 + i * 100;
       },
       endDelay: function(el, i, l) {
         return (l - i) * 100;
