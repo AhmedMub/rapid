@@ -123,10 +123,6 @@ footer .third a {
 }
 
 /*Start header*/
-.body-hidden {
-  overflow: hidden;
-}
-
 @media (max-width: 575.98px) {
   h2 {
     font-size: 1.2rem !important;
@@ -668,7 +664,7 @@ header .content .right-content {
 }
 @media (max-width: 767.98px) {
   .why-choose-us .choose-content .right .inner-right .items .item p {
-    margin-left: 37px;
+    margin-left: 71px;
     margin-top: -10px;
   }
 }
@@ -942,7 +938,7 @@ header .content .right-content {
   }
 }
 .testimonials .slider .slides .slide .img-info small {
-  color: #9A9595;
+  color: #9a9595;
 }
 .testimonials .slider .slides .slide .img-info p {
   font-size: 1rem;
@@ -1041,7 +1037,7 @@ header .content .right-content {
 .team .team-content .person-info .inner-team-content .inner-info .info {
   height: 4rem;
   text-transform: capitalize;
-  transition: all .8s;
+  transition: all 0.8s;
   cursor: pointer;
 }
 .team .team-content .person-info .inner-team-content .inner-info .info h3 {
@@ -1243,7 +1239,7 @@ header .content .right-content {
 .frq-questions .QA .per-QA h4 {
   font-weight: 400;
   font-size: 1.2rem;
-  transition: all .8s;
+  transition: all 0.8s;
 }
 @media (max-width: 575.98px) {
   .frq-questions .QA .per-QA h4 {
@@ -1266,12 +1262,12 @@ header .content .right-content {
   top: 0;
   right: 0;
   color: #1bb1dc;
-  transition: all .8s;
+  transition: all 0.8s;
 }
 .frq-questions .QA .per-QA .ask-content {
   max-height: 0;
   overflow: hidden;
-  transition: all .8s;
+  transition: all 0.8s;
 }
 .frq-questions .QA .per-QA .enabled-answer {
   max-height: 100px !important;

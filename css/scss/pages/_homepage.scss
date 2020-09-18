@@ -1,6 +1,6 @@
 /*Start header*/
 .body-hidden {
-  overflow: hidden;
+  // overflow: hidden;
 }
 h2 {
   @include media-575 {
@@ -408,7 +408,7 @@ header {
             padding: 15px 0;
           }
         }
-       
+
         h3 {
           text-align: center;
         }
@@ -422,7 +422,7 @@ header {
           }
         }
       }
-    } 
+    }
   }
 }
 /* ================================= end services =================================*/
@@ -489,7 +489,7 @@ header {
               margin-top: -23px;
               color: $thirdClr;
               @include media-767 {
-                margin-left: 37px;
+                margin-left: 71px;
                 margin-top: -10px;
               }
             }
@@ -727,12 +727,12 @@ header {
             }
           }
           small {
-            color:#9A9595 ;
+            color: #9a9595;
           }
           p {
             font-size: 1rem;
             margin-top: 6px;
-            color:  #828282;
+            color: #828282;
             font-weight: 500;
             @include media-767 {
               font-size: 11px;
@@ -741,7 +741,6 @@ header {
         }
       }
     }
-    
   }
   .indicators {
     ul {
@@ -759,7 +758,6 @@ header {
         padding: 6px;
         border-radius: 50%;
         margin-right: 10px;
-        
       }
       .active-li {
         background-color: $secondClr;
@@ -809,7 +807,7 @@ header {
           position: absolute;
           bottom: 0;
           left: 0;
-          background:#0009;
+          background: #0009;
           color: #fff;
           width: 90%;
           text-align: center;
@@ -820,7 +818,7 @@ header {
           .info {
             height: 4rem;
             text-transform: capitalize;
-            transition: all .8s;
+            transition: all 0.8s;
             cursor: pointer;
             h3 {
               margin: 10px 0 0px 0;
@@ -828,10 +826,10 @@ header {
             span {
               font-size: 13px;
             }
-          .social-icons {
-            margin-top: 10px;
-            margin-bottom: 6px;
-            cursor: pointer;
+            .social-icons {
+              margin-top: 10px;
+              margin-bottom: 6px;
+              cursor: pointer;
               i {
                 margin-right: 10px;
                 &:hover {
@@ -870,13 +868,13 @@ header {
       right: 0;
       background: linear-gradient(to left, #fff 0%, transparent 100%);
     }
-    .marquee-content { 
+    .marquee-content {
       display: flex;
       justify-content: flex-start;
       align-items: flex-start;
-      animation: scrolling 40s linear infinite ;
+      animation: scrolling 40s linear infinite;
       @include scrollingAnimation;
-      
+
       li {
         width: 25%;
         flex-shrink: 0;
@@ -886,10 +884,9 @@ header {
         }
       }
       &:hover {
-         @include Prefixer(animation-play-state, paused, (webkit moz));
+        @include Prefixer(animation-play-state, paused, (webkit moz));
       }
     }
-    
   }
 }
 /* ================================= end our clients =================================*/
@@ -923,10 +920,10 @@ header {
       background: #fff;
       text-align: center;
       @include Prefixer(
-      $prop: box-shadow,
-      $value: 0px 10px 6px -6px rgba(183, 186, 186, 0.75),
-      $prefixes: (
-        webkit moz,
+        $prop: box-shadow,
+        $value: 0px 10px 6px -6px rgba(183, 186, 186, 0.75),
+        $prefixes: (
+          webkit moz,
         )
       );
       @include media-767 {
@@ -1000,7 +997,7 @@ header {
       h4 {
         font-weight: 400;
         font-size: 1.2rem;
-        transition: all .8s;
+        transition: all 0.8s;
         @include media-575 {
           font-size: 12px;
         }
@@ -1020,13 +1017,13 @@ header {
           top: 0;
           right: 0;
           color: $secondClr;
-          transition: all .8s;
+          transition: all 0.8s;
         }
       }
       .ask-content {
         max-height: 0;
         overflow: hidden;
-        transition: all .8s;
+        transition: all 0.8s;
       }
       .enabled-answer {
         max-height: 100px !important;
